@@ -1,46 +1,56 @@
-# Getting Started with Create React App
+Here's a brief documentation template for your app, following the format you provided:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+## COVID-19 Dashboard
 
-In the project directory, you can run:
+This web application provides a dashboard to visualize COVID-19 data, including global statistics and country-specific information.
 
-### `npm start`
+### Features
+- **Global Statistics**: View total cases, deaths, and recovered cases worldwide.
+- **Historical Data**: Visualize COVID-19 case fluctuations over time with a line graph.
+- **Country-Specific Data**: Explore detailed statistics for each country, including active cases, recovered cases, and deaths.
+- **Interactive Map**: See a map with markers indicating country-specific COVID-19 data. Click on markers to view more details.
+- **Responsive Design**: Optimized for both desktop and mobile views.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Technologies Used
+- **React**: For building the user interface.
+- **Axios**: For making API requests.
+- **React-Leaflet**: For displaying interactive maps.
+- **Tailwind CSS**: For styling and responsive design.
+- **Chart.js**: For rendering the line graph.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### API Endpoints
+- **Global Data**: 
+  - URL: [https://disease.sh/v3/covid-19/all](https://disease.sh/v3/covid-19/all)
+  - Provides total cases, deaths, and recovered cases worldwide.
+- **Country-Specific Data**:
+  - URL: [https://disease.sh/v3/covid-19/countries](https://disease.sh/v3/covid-19/countries)
+  - Provides COVID-19 data for each country including active cases, recovered cases, and deaths.
+- **Historical Data**:
+  - URL: [https://disease.sh/v3/covid-19/historical/all?lastdays=all](https://disease.sh/v3/covid-19/historical/all?lastdays=all)
+  - Provides historical data for COVID-19 cases to visualize fluctuations over time.
 
-### `npm test`
+### Getting Started
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/your-username/your-repository.git
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Install Dependencies**
+   ```bash
+   cd your-repository
+   npm install
+   ```
 
-### `npm run build`
+3. **Start the Development Server**
+   ```bash
+   npm start
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. **Open in Browser**
+   Navigate to [http://localhost:3000](http://localhost:3000) in your browser.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Feel free to adjust any details to better fit your specific application or project setup.
