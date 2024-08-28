@@ -1,23 +1,31 @@
 ## COVID-19 Dashboard
 
-This web application provides a dashboard to visualize COVID-19 data, including global statistics and country-specific information.
+This web application provides a dashboard to visualize COVID-19 data, manage contacts, and view detailed statistics and interactive maps.
 
 ### Features
-- **Global Statistics**: View total cases, deaths, and recovered cases worldwide.
-- **Historical Data**: Visualize COVID-19 case fluctuations over time with a line graph.
-- **Country-Specific Data**: Explore detailed statistics for each country, including active cases, recovered cases, and deaths.
-- **Interactive Map**: See a map with markers indicating country-specific COVID-19 data. Click on markers to view more details.
-- **Responsive Design**: Optimized for both desktop and mobile views.
+
+#### Contacts Page
+- **Add New Contacts**: A form to add new contacts to the list.
+- **View Contacts**: Display a list of all added contacts.
+- **Contact Details**: Each contact has a button to view detailed information.
+- **Edit and Delete**: Functionality to edit and delete existing contacts.
+- **State Management**: Uses Redux to store and manage contact data.
+
+#### Charts and Maps Page
+- **Line Graph**: Visualize COVID-19 case fluctuations over time.
+- **Interactive Map**: Displays a map with markers indicating COVID-19 data for each country. Markers show the country name, and statistics such as active cases, recovered cases, and deaths.
+- **Responsive Design**: Adaptable layout for both desktop and mobile views.
 
 ### Technologies Used
 - **React**: For building the user interface.
+- **Redux**: For state management of contact data.
 - **Axios**: For making API requests.
 - **React-Leaflet**: For displaying interactive maps.
-- **Tailwind CSS**: For styling and responsive design.
 - **Chart.js**: For rendering the line graph.
+- **Tailwind CSS**: For styling and responsive design.
 
 ### API Endpoints
-- **Global Data**: 
+- **Global Data**:
   - URL: [https://disease.sh/v3/covid-19/all](https://disease.sh/v3/covid-19/all)
   - Provides total cases, deaths, and recovered cases worldwide.
 - **Country-Specific Data**:
@@ -30,12 +38,12 @@ This web application provides a dashboard to visualize COVID-19 data, including 
 ### Getting Started
 1. **Clone the Repository**
    ```bash
-   git clone [https://github.com/your-username/your-repository.git](https://github.com/uttampatro/contact-management-app.git)
+   git clone https://github.com/your-username/your-repository.git
    ```
 
 2. **Install Dependencies**
    ```bash
-   cd your-repository
+   cd contact-management-app
    npm install
    ```
 
@@ -46,7 +54,3 @@ This web application provides a dashboard to visualize COVID-19 data, including 
 
 4. **Open in Browser**
    Navigate to [http://localhost:3000](http://localhost:3000) in your browser.
-
----
-
-Feel free to adjust any details to better fit your specific application or project setup.
