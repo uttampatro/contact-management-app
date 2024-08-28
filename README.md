@@ -30,7 +30,7 @@ This web application provides a dashboard to visualize COVID-19 data, including 
 ### Getting Started
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-username/your-repository.git
+   git clone [https://github.com/your-username/your-repository.git](https://github.com/uttampatro/contact-management-app.git)
    ```
 
 2. **Install Dependencies**
