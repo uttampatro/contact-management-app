@@ -7,7 +7,6 @@ This web application provides a dashboard to visualize COVID-19 data, manage con
 #### Contacts Page
 - **Add New Contacts**: A form to add new contacts to the list.
 - **View Contacts**: Display a list of all added contacts.
-- **Contact Details**: Each contact has a button to view detailed information.
 - **Edit and Delete**: Functionality to edit and delete existing contacts.
 - **State Management**: Uses Redux to store and manage contact data.
 
