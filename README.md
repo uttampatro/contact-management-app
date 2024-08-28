@@ -1,7 +1,3 @@
-Here's a brief documentation template for your app, following the format you provided:
-
----
-
 ## COVID-19 Dashboard
 
 This web application provides a dashboard to visualize COVID-19 data, including global statistics and country-specific information.
