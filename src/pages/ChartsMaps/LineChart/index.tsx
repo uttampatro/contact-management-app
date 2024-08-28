@@ -57,15 +57,29 @@ const LineChart: React.FC = () => {
 
   return (
     <div className="chart-container">
-      {data ? (
-        <div className="w-full h-80">
-          <Line
-            data={data}
-            options={{ responsive: true, maintainAspectRatio: false }}
-          />
-        </div>
-      ) : (
-        <p>Loading...</p>
+      {data && (
+        <>
+      {/* Chart for large screens */}
+          <div className="hidden  lg:block w-full h-[450px]">
+            <Line
+              data={data}
+              options={{
+                responsive: true,
+                maintainAspectRatio: false,
+              }}
+            />
+          </div>
+      {/* Chart for mobile screens */}
+          <div className="lg:hidden w-full h-[300px]">
+            <Line
+              data={data}
+              options={{
+                responsive: true,
+                maintainAspectRatio: false,
+              }}
+            />
+          </div>
+        </>
       )}
     </div>
   );

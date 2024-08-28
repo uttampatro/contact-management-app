@@ -21,7 +21,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div className="flex min-h-screen bg-gray-100">
       {/* Sidebar for larger screens */}
-      <aside className="hidden md:flex md:flex-col md:w-1/4 bg-gray-800 text-white p-4 md:min-h-screen">
+      <aside className="hidden md:flex md:flex-col md:w-1/5 bg-gray-800 text-white p-4 md:min-h-screen" style={{ minHeight: '65vw' }}>
         <h2 className="text-2xl font-bold mb-6">Sidebar</h2>
         <nav>
           <ul className="space-y-4">
